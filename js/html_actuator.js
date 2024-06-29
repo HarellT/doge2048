@@ -10,8 +10,7 @@ function HTMLActuator() {
   this.score = 0;
 }
 
-var dogeSayings = ['such good', 'so amaze', 'many points', 'very unstoppable', 'great jorb', 'such playing', 'very good', 'points', 'very gaming', 'such player', 'concern' ,'bewildered',
-'many game', 'so good', 'very scores', 'so scoring', 'so hot right now', 'such playing', 'such matching', 'so matched', 'very matched', 'very neat' ,'such natural',]
+var dogeSayings = ["Pandastic!", "Panda Combo🐼", "Bamboozled🎋Panda!", "Did you know that if you wave at a panda then they might wave back🐼", "🗿", "Kong Fu 🐼!", "LINE UP PANDAS! 🐼🐼🐼🐼 | 🎋🎋🎋🎋", "🐼", "my bamboo! 🐼🎋", "Panda Reverse🀤!"]
 
 var ads = [
 
@@ -32,7 +31,6 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
         }
       });
     });
-
     self.updateScore(metadata.score);
     self.updateBestScore(metadata.bestScore);
 
@@ -168,10 +166,10 @@ HTMLActuator.prototype.clearMessage = function () {
 HTMLActuator.prototype.showInfo = function () {
   if ( this.info.getAttribute('style') === "display:block;"){
     this.info.setAttribute('style','display:none;')
-    document.querySelector('.show-info').innerHTML = 'INFO';
+    document.querySelector('.show-info').innerHTML = 'open';
   } else {
     this.info.setAttribute('style','display:block;') 
-    document.querySelector('.show-info').innerHTML = 'CLOSE';
+    document.querySelector('.show-info').innerHTML = 'unopen';
   }
 }
 
